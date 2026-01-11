@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle with Rounding</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .container {
+        width: 80vw;
+        height: 80vh;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border-radius: 100px;
+        border: 10px solid blanchedalmond;
+      }
+      .box1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box1:hover {
+        background-color: pink;
+        border: 5px solid cyan;
+      }
+
+      .loader {
+        border-top: 5px solid #3498db;
+        border-bottom: 5px solid orange;
+        border-left: 5px solid red;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1 loader"><b>Azhaan</b></div>
+    </div>
+  </body>
+</html>
