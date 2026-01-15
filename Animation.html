@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        width: 250px;
+        height: 300px;
+        margin: auto;
+        background-color: blueviolet;
+      }
+      .box img{
+        width: 250px;
+        height: 300px;
+        /* transform: translate(200px); */
+        /* transform: rotate(45deg); */
+        /* transform: skew(25deg,20deg); */
+        /* transform: rotate(.5deg); */
+        transition: width height;
+        transition-duration: 3s;
+        transition-timing-function: ease-in;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="Images/Azhar.png" alt="NoImage" />
+    </div>
+  </body>
+</html>
