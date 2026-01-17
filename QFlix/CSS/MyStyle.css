@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.nav{
+  width:200px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.626);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:100px;
+  left: 0;
+  position: fixed;
+  font-size: 15px;
+  transform: translate(-120px);
+  transition: all 0.5
+  +s;
+}
+.nav:hover{
+  transform: translate(0px);
+  
+}
+.nav a{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color:white;
+}
+
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  padding:10px 20px 10px 10px;
+  box-sizing: border-box;
+  color:whitesmoke;
+  transition:background .5s;
+  cursor: pointer;
+}
+
+.icon:hover{
+  border:1px solid black;
+}
+
+#mainHome{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(26, 23, 23); */
+  background-size: 100% 100%;
+  position: relative;
+}
+
+
+.backimg{
+  width: 90%;
+  height: 90%;
+  border-radius: 40px;
+  background-color: aqua;
+  animation: autorun 40s linear infinite;
+  background-size: 100% 100%;
+  box-shadow: 2px 2px 20px black, 2px 2px 20px cyan, 2px 2px 20px aqua, 2px 2px 20px pink;
+  position: relative;
+}
+
+.bg{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.432);
+  position:absolute;
+  border-radius: 40px;
+  z-index: 3;
+}
+
+.written{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  position:absolute;
+  top:40%;
+  left:10%;
+}
+
+.w1{
+  color:white;
+  font-size: 40px;
+  text-shadow: 2px 2px 10px black,2px 2px 10px aquamarine;
+}
+
+.w2{
+  color:white;
+  font-size: 20px;
+}
+
+.w3{
+  color:white;
+  font-size: 20px;
+}
+
+.written button{
+  width: 180px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+  border:none;
+  border-radius: 40px;
+  margin-top:30px;
+  text-shadow: 2px 2px 10px black,2px 2px 10px aquamarine;
+  box-shadow: 2px 2px 10px black,2px 2px 10px aquamarine;
+  background-color:aquamarine;
+}
+
+.written button:hover{
+  background-color: transparent;
+  box-shadow: 2px 2px 10px black,2px 2px 10px aquamarine;
+  border:2px solid green;
+}
+
+.navSignIn{
+  
+  width: 100vw;
+  height: 8vh;
+  position:absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  top:50px;
+  gap:800px;
+}
+
+.logo span{
+font-family: "Macondo", cursive;
+font-size: 45px;
+color:aquamarine;
+font-weight: 1000;
+}
+
+.navSignIn a{
+  text-decoration: none;
+  color:white;
+}
+
+.navSignIn button{
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:none;
+  border-radius: 40px;
+  margin-top:30px;
+  text-shadow: 2px 2px 10px black,2px 2px 10px aquamarine;
+  box-shadow: 2px 2px 10px black,2px 2px 10px aquamarine;
+  background-color:aquamarine;
+}
+
+.navSignIn button:hover{
+  background-color: transparent;
+  box-shadow: 2px 2px 10px black,2px 2px 10px aquamarine;
+  border:2px solid green;
+}
+
+#mainCategory{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(26, 23, 23);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.top{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  gap:150px;
+}
+
+.bottom{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+  gap:150px;
+}
+
+.innerCardAction{
+  width:15%;
+  height: 85%;
+  position:relative;
+  background-image: url("/QFlix/MyImages/MoviesPicture/Types/ACTION.avif");
+  background-size: 100% 100%;
+border-radius: 12px;
+}
+
+.outerCardAction{
+  width:100%;
+  height: 100%;
+  position:absolute;
+  background: linear-gradient(to right , rgb(49, 39, 39), rgb(40, 96, 40));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  font-size: 20px;
+  text-shadow:2px 2px 10px rgb(49, 39, 39), 2px 2px 10px rgb(40, 96, 40) ;
+  /* background-size: 100% 100%; */
+  border-radius:12px;
+  transition: all 1s;
+}
+
+.outerCardAction:hover{
+  transform:rotate(45deg);
+  transform-origin: left bottom;
+}
+
+.iCardDrama{
+  background-image: url("/QFlix/MyImages/MoviesPicture/Types/Drama.jpg");
+}
+
+.oCardDrama{
+  background: linear-gradient(to right , rgb(46, 25, 99), rgb(81, 10, 27));
+  text-shadow:2px 2px 10px rgb(36, 25, 99), 2px 2px 10px rgb(81, 10, 43);
+}
+
+.iCardCrime{
+  background-image: url("/QFlix/MyImages/MoviesPicture/Types/CRIME.avif");
+}
+
+.oCardCrime{
+  background: linear-gradient(to right , rgb(61, 17, 174), rgb(13, 160, 189));
+  text-shadow:2px 2px 10px rgb(36, 25, 99), 2px 2px 10px rgb(81, 10, 43);
+}
+
+.innerCardRomance{
+  width:15%;
+  height: 85%;
+  position:relative;
+  background-image: url("/QFlix/MyImages/MoviesPicture/Types/Romance.avif");
+  background-size: 100% 100%;
+border-radius: 12px;
+}
+
+.outerCardRomance{
+  width:100%;
+  height: 100%;
+  position:absolute;
+  background: linear-gradient(to right , rgb(45, 12, 108), rgb(13, 5, 129));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  font-size: 20px;
+  text-shadow:2px 2px 10px rgb(49, 39, 39), 2px 2px 10px rgb(40, 96, 40) ;
+  /* background-size: 100% 100%; */
+  border-radius:12px;
+  transition: all 1s;
+}
+
+.outerCardRomance:hover{
+  transform:rotate(45deg);
+  transform-origin: left bottom;
+}
+
+
+.iCardMythology{
+  background-image: url("/QFlix/MyImages/MoviesPicture/Types/MYTHOLOGY.avif");
+}
+.oCardMythology{
+  background: linear-gradient(to right , rgb(129, 97, 211), rgb(239, 86, 122));
+  text-shadow:2px 2px 10px rgb(140, 124, 225), 2px 2px 10px rgb(214, 96, 151);
+}
+
+.iCardAnime{
+  background-image: url("/QFlix/MyImages/MoviesPicture/Types/ANIME.avif");
+}
+.oCardAnime{
+  background: linear-gradient(to right , rgb(197, 115, 34), rgb(223, 94, 124));
+  text-shadow:2px 2px 10px rgb(36, 25, 99), 2px 2px 10px rgb(81, 10, 43);
+}
+
+@keyframes autorun {
+  0%{
+    background-image: url(/Images/Azhar.png);
+  }
+  10%{
+    background-image: url(/QFlix/MyImages/MoviesPicture/FilmBackground.jpg);
+  }
+  20%{
+    background-image: url(/QFlix/MyImages/MoviesPicture/ASS01.jpg);
+  }
+  23%{
+    background-image: url(/QFlix/MyImages/MoviesPicture/ASS02.jpg);
+  }
+  26%{
+    background-image: url(/QFlix/MyImages/MoviesPicture/ASS03.jpg);
+  }
+  28%{
+    background-image: url(/QFlix/MyImages/MoviesPicture/ASS04.jpg);
+  }
+  30%{
+    background-image: url(/QFlix/MyImages/MoviesPicture/DDLJ01.jpg);
+  }
+  40%{
+    background-image: url(/QFlix/MyImages/MoviesPicture/Avengers/Avengers04.jpg);
+  }
+  50%{
+    background-image: url(/QFlix/MyImages/MoviesPicture/Avengers/Avengers13.jpg);
+  }
+  60%{
+    background-image: url(/QFlix/MyImages/MoviesPicture/AAS01.jpg);
+  }
+  70%{
+    background-image: url(/QFlix/MyImages/MoviesPicture/ShahrukhKhan/ShahrukhKatrina.jpg);
+  }
+  80%{
+    background-image: url(/QFlix/MyImages/MoviesPicture/ShahrukhKhan/ShahrukhDeepika33.jpg);
+  }
+  90%{
+    background-image: url(/QFlix/MyImages/MoviesPicture/ShahrukhKhan/ShahrukhDeepika.jpg);
+  }
+  100%{
+    background-image: url(/QFlix/MyImages/MoviesPicture/Avengers/Avengers16.jpg);
+  }
+}
+
+#mainSignIn{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(26, 23, 23);
+}
+
+#s1{
+  width: 200px;
+  height: 200px;
+}
+
+#mainSignIn input{
+  width: 50%;
+  height: 70px;
+  border: 2px solid black;
+  border-right:none;
+  border-radius: 20px 0px 0px 20px;
+  font-size: 25px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  color:white;
+  text-shadow:2px 2px 10px rgb(36, 25, 99), 2px 2px 10px rgb(81, 10, 43);
+}
+
+#mainSignIn button{
+  width: 15%;
+  height: 70px;
+  border: 2px solid black;
+  border-left:none;
+  border-radius: 0px 20px 20px 0px;
+  background: linear-gradient(to right , rgb(129, 97, 211), rgb(239, 86, 122));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:2px 2px 10px rgb(36, 25, 99), 2px 2px 10px rgb(81, 10, 43);
+  color:white;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+
+#mainSignIn button:hover{
+  background: linear-gradient(to left , rgb(129, 97, 211), rgb(239, 86, 122));
+}
