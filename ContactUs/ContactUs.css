@@ -1,0 +1,141 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  background: url("ContactUs.avif");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  font-size: 18px;
+}
+
+.container{
+width: 70vw;
+height: 75vh;
+background-color: rgba(128, 128, 128, 0.315);
+margin:100px auto;
+backdrop-filter: blur(6px);
+border-radius: 10px;
+box-shadow: 0px 0px 20px pink;
+color:rgb(105, 165, 15);
+display: flex;
+justify-content: right;
+animation: leftAppear 1s linear 1;
+}
+
+.leftdetails{
+  width:40%;
+  height: 75vh;
+  display:flex;
+  justify-content: center;
+}
+.leftdetails h3{
+  text-align: center;
+  margin-top: 30px;
+  animation: headingOpacity 1s linear 1;
+}
+.leftdetails img{
+  width: 30px;
+  height: 40px;
+  animation: leftAppear 1s linear 1;
+}
+.leftdetails img:hover{
+  transform: translateY(-10px);
+  transition: transform .1s;
+  cursor: pointer;
+}
+.leftdetails .image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+}
+
+.rightdetails{
+  width: 60%;
+  height: 75vh;
+  background-color: rgb(111, 207, 239);
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 0px 0px 20px pink;
+  animation: rightAppear 1s linear 1;
+}
+.rightdetails h3{
+  text-align: center;
+  margin-top: 30px;
+  animation: headingOpacity 1s linear 1;
+}
+
+.formData input{
+  margin:15px 10px;
+  margin-left: 28px;
+  padding-right: 80px;
+  padding-top:4px;
+  padding-left:5px;
+  padding-bottom: 4px;
+  border: 2px solid white;
+  box-shadow: inset 5px 5px 8px rgb(138,137,137),inset 5px 5px 8px rgb(138,137,137);
+  border-radius: 8px;
+}
+.formData textarea{
+  margin:15px 10px;
+  margin-left: 28px;
+  padding-right: 80px;
+  padding-top:4px;
+  padding-left:5px;
+  padding-bottom: 4px;
+  border: 2px solid white;
+  box-shadow: inset 5px 5px 8px rgb(138,137,137),inset 5px 5px 8px rgb(138,137,137);
+  border-radius: 8px;
+}
+
+.btnsubmit button{
+  margin:15px 10px;
+  margin-left:28px;
+  /* padding-top:30px;
+  padding-right: 50px; */
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 8px;
+  background: none;
+  color:wheat;
+  background-color: gray;
+  border:2px solid white;
+  transition: background-color 0.5s, color 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnsubmit button:hover{
+  background-color: white;
+  color:gray;
+  border:2px solid gray;
+}
+
+@keyframes leftAppear {
+  from{
+    transform: translateX(-100px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
+@keyframes rightAppear {
+  from{
+    transform: translateX(200px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
+@keyframes headingOpacity {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
