@@ -1,0 +1,73 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  /* position: relative; */
+  width: 255px;
+  height:305px;
+  margin-top: 90px;
+  background-color: aqua;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+.container:hover{
+  transform: rotateY(180deg);
+}
+.card{
+  position:absolute;
+  width: 250px;
+  height:300px;
+  border:2px solid gray;
+  backface-visibility: hidden;
+  box-shadow: 20px 20px 60px rgb(93, 12, 168);
+}
+.front{
+  background-image: url(Azhar.png);
+  background-size: 100% 100%;
+}
+.back{
+background: linear-gradient(60deg,rgb(107, 216, 107),rgb(43, 43, 160),rgb(216, 83, 83));
+transform: rotateY(180deg);
+}
+.back img{
+  display: block;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin:auto;
+  top:60px;
+  border-radius: 50%;
+  border-bottom:2px solid red;
+  box-shadow: 2px 2px 4px black;
+}
+.back h3{
+  text-align: center;
+  margin-top:60px;
+  font-size: 18px;
+  color:white;
+}
+.back h4{
+  text-align: center;
+  margin-top:5px;
+  font-size: 30px;
+  color:white;
+}
+.back button{
+  display: block;
+  padding:5px 10px;
+  border-radius: 10px;
+  background-color: blueviolet;
+  color:white;
+font-size: 17px;
+margin:10px auto;
+}
+.back button:hover{
+  box-shadow: 0px 0px 50px blueviolet;
+}
